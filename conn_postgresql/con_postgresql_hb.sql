@@ -38,34 +38,3 @@ create table public.hotel_booking_city(
 COPY hotel_booking_city
 FROM '/home/vanda_1345/Projects/postgresql/dbs/hotel_booking/H2.csv'
 WITH(FORMAT CSV, DELIMITER ',', NULL  'NA', HEADER);  
-
--- query for hotel_booking_city_clean
-/*
-create table public.hotel_booking_city_c(
-	IsCanceled integer,
-	LeadTime integer,
-	StaysInWeekendNights integer,
-	StaysInWeekNights integer,
-	Adults integer,
-	Children numeric,
-	Babies integer,
-	Meal integer,
-	IsRepeatedGuest integer,
-	PreviousCancellations integer,
-	PreviousBookingsNotCanceled integer,
-	ReservedRoomType integer,
-	AssignedRoomType integer,
-	BookingChanges integer,
-	DepositType integer,
-	DaysInWaitingList integer,
-	CustomerType integer,
-	ADR numeric,
-	RequiredCarParkingSpaces integer,
-	TotalOfSpecialRequests integer
-); 
-
-
-COPY hotel_booking_city_c
-FROM '/home/vanda_1345/Projects/postgresql/dbs/hotel_booking/hotel_booking_city_clean.csv'
-DELIMITER ','
-CSV HEADER; */

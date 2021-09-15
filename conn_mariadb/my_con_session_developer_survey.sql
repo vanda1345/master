@@ -1,4 +1,4 @@
- /*
+ 
  CREATE OR REPLACE TABLE developer_survey_cl2 
   (
      MainBranch         VARCHAR(77) NOT NULL, 
@@ -14,11 +14,11 @@
      JobSat             VARCHAR(34) DEFAULT NULL, 
      JobSeek            VARCHAR(60) DEFAULT NULL,
      NEWDevOps          VARCHAR(8) DEFAULT NULL,  
-     NEWDevOpsImpt      VARCHAR(18) DEFAULT NULL,  
+     NEWDevOpsImpt      VARCHAR(25) DEFAULT NULL,  
      NEWEdImpt          VARCHAR(34) DEFAULT NULL,  
      NEWJobHunt         VARCHAR(380) DEFAULT NULL,  
      NEWJobHuntResearch VARCHAR(365) DEFAULT NULL,  
-     NEWLearn           VARCHAR(16) DEFAULT NULL,  
+     NEWLearn           VARCHAR(25) DEFAULT NULL,  
      NEWOnboardGood     VARCHAR(28) DEFAULT NULL,  
      NEWOvertime        VARCHAR(56) DEFAULT NULL,  
      OpSys              VARCHAR(11) DEFAULT NULL,  
@@ -38,7 +38,7 @@ LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_surve
  FIELDS TERMINATED BY ',' 
  LINES TERMINATED BY '\n' 
  IGNORE 1 LINES;  
- */
+
 
 
   CREATE OR REPLACE TABLE developer_survey_cl3 
@@ -54,9 +54,9 @@ LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_surve
      JobSat             VARCHAR(34) DEFAULT NULL, 
      JobSeek            VARCHAR(60) DEFAULT NULL,
      NEWDevOps          VARCHAR(8) DEFAULT NULL,  
-     NEWDevOpsImpt      VARCHAR(18) DEFAULT NULL,  
+     NEWDevOpsImpt      VARCHAR(34) DEFAULT NULL,  
      NEWEdImpt          VARCHAR(34) DEFAULT NULL,   
-     NEWLearn           VARCHAR(16) DEFAULT NULL,  
+     NEWLearn           VARCHAR(20) DEFAULT NULL,  
      NEWOnboardGood     VARCHAR(28) DEFAULT NULL,  
      NEWOvertime        VARCHAR(56) DEFAULT NULL,  
      OpSys              VARCHAR(11) DEFAULT NULL,  
@@ -93,11 +93,11 @@ CREATE OR REPLACE TABLE developer_survey_cl_si
      JobSat             VARCHAR(34) DEFAULT NULL, 
      JobSeek            VARCHAR(60) DEFAULT NULL,
      NEWDevOps          VARCHAR(8) DEFAULT NULL,  
-     NEWDevOpsImpt      VARCHAR(18) DEFAULT NULL,  
+     NEWDevOpsImpt      VARCHAR(20) DEFAULT NULL,  
      NEWEdImpt          VARCHAR(34) DEFAULT NULL,  
      NEWJobHunt         VARCHAR(380) DEFAULT NULL,  
      NEWJobHuntResearch VARCHAR(365) DEFAULT NULL,  
-     NEWLearn           VARCHAR(16) DEFAULT NULL,  
+     NEWLearn           VARCHAR(20) DEFAULT NULL,  
      NEWOnboardGood     VARCHAR(28) DEFAULT NULL,  
      NEWOvertime        VARCHAR(56) DEFAULT NULL,  
      OpSys              VARCHAR(11) DEFAULT NULL,  
@@ -132,9 +132,9 @@ LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_surve
      JobSat             VARCHAR(34) DEFAULT NULL, 
      JobSeek            VARCHAR(60) DEFAULT NULL,
      NEWDevOps          VARCHAR(8) DEFAULT NULL,  
-     NEWDevOpsImpt      VARCHAR(18) DEFAULT NULL,  
+     NEWDevOpsImpt      VARCHAR(20) DEFAULT NULL,  
      NEWEdImpt          VARCHAR(34) DEFAULT NULL,   
-     NEWLearn           VARCHAR(16) DEFAULT NULL,  
+     NEWLearn           VARCHAR(20) DEFAULT NULL,  
      NEWOnboardGood     VARCHAR(28) DEFAULT NULL,  
      NEWOvertime        VARCHAR(56) DEFAULT NULL,  
      OpSys              VARCHAR(11) DEFAULT NULL,  
