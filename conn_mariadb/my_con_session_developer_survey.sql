@@ -14,11 +14,11 @@
      JobSat             VARCHAR(34) DEFAULT NULL, 
      JobSeek            VARCHAR(60) DEFAULT NULL,
      NEWDevOps          VARCHAR(8) DEFAULT NULL,  
-     NEWDevOpsImpt      VARCHAR(25) DEFAULT NULL,  
+     NEWDevOpsImpt      VARCHAR(18) DEFAULT NULL,  
      NEWEdImpt          VARCHAR(34) DEFAULT NULL,  
      NEWJobHunt         VARCHAR(380) DEFAULT NULL,  
      NEWJobHuntResearch VARCHAR(365) DEFAULT NULL,  
-     NEWLearn           VARCHAR(25) DEFAULT NULL,  
+     NEWLearn           VARCHAR(16) DEFAULT NULL,  
      NEWOnboardGood     VARCHAR(28) DEFAULT NULL,  
      NEWOvertime        VARCHAR(56) DEFAULT NULL,  
      OpSys              VARCHAR(11) DEFAULT NULL,  
@@ -33,12 +33,12 @@ engine=innodb
 DEFAULT charset=latin1; 
 
 
-LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_survey_cl2.csv' 
+LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/for_maria/developer_survey_cl2.csv' 
  INTO table master_maria_db.developer_survey_cl2 
  FIELDS TERMINATED BY ',' 
  LINES TERMINATED BY '\n' 
  IGNORE 1 LINES;  
-
+ 
 
 
   CREATE OR REPLACE TABLE developer_survey_cl3 
@@ -54,9 +54,9 @@ LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_surve
      JobSat             VARCHAR(34) DEFAULT NULL, 
      JobSeek            VARCHAR(60) DEFAULT NULL,
      NEWDevOps          VARCHAR(8) DEFAULT NULL,  
-     NEWDevOpsImpt      VARCHAR(34) DEFAULT NULL,  
+     NEWDevOpsImpt      VARCHAR(18) DEFAULT NULL,  
      NEWEdImpt          VARCHAR(34) DEFAULT NULL,   
-     NEWLearn           VARCHAR(20) DEFAULT NULL,  
+     NEWLearn           VARCHAR(16) DEFAULT NULL,  
      NEWOnboardGood     VARCHAR(28) DEFAULT NULL,  
      NEWOvertime        VARCHAR(56) DEFAULT NULL,  
      OpSys              VARCHAR(11) DEFAULT NULL,  
@@ -71,7 +71,7 @@ engine=innodb
 DEFAULT charset=latin1; 
 
 
-LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_survey_cl3.csv' 
+LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/for_maria/developer_survey_cl3.csv' 
  INTO table master_maria_db.developer_survey_cl3 
  FIELDS TERMINATED BY ',' 
  LINES TERMINATED BY '\n' 
@@ -93,11 +93,11 @@ CREATE OR REPLACE TABLE developer_survey_cl_si
      JobSat             VARCHAR(34) DEFAULT NULL, 
      JobSeek            VARCHAR(60) DEFAULT NULL,
      NEWDevOps          VARCHAR(8) DEFAULT NULL,  
-     NEWDevOpsImpt      VARCHAR(20) DEFAULT NULL,  
+     NEWDevOpsImpt      VARCHAR(18) DEFAULT NULL,  
      NEWEdImpt          VARCHAR(34) DEFAULT NULL,  
      NEWJobHunt         VARCHAR(380) DEFAULT NULL,  
      NEWJobHuntResearch VARCHAR(365) DEFAULT NULL,  
-     NEWLearn           VARCHAR(20) DEFAULT NULL,  
+     NEWLearn           VARCHAR(16) DEFAULT NULL,  
      NEWOnboardGood     VARCHAR(28) DEFAULT NULL,  
      NEWOvertime        VARCHAR(56) DEFAULT NULL,  
      OpSys              VARCHAR(11) DEFAULT NULL,  
@@ -112,7 +112,7 @@ engine=innodb
 DEFAULT charset=latin1; 
 
 
-LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_survey_cl_si.csv' 
+LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/for_maria/developer_survey_cl_si.csv' 
  INTO table master_maria_db.developer_survey_cl_si 
  FIELDS TERMINATED BY ',' 
  LINES TERMINATED BY '\n' 
@@ -132,9 +132,9 @@ LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_surve
      JobSat             VARCHAR(34) DEFAULT NULL, 
      JobSeek            VARCHAR(60) DEFAULT NULL,
      NEWDevOps          VARCHAR(8) DEFAULT NULL,  
-     NEWDevOpsImpt      VARCHAR(20) DEFAULT NULL,  
+     NEWDevOpsImpt      VARCHAR(18) DEFAULT NULL,  
      NEWEdImpt          VARCHAR(34) DEFAULT NULL,   
-     NEWLearn           VARCHAR(20) DEFAULT NULL,  
+     NEWLearn           VARCHAR(16) DEFAULT NULL,  
      NEWOnboardGood     VARCHAR(28) DEFAULT NULL,  
      NEWOvertime        VARCHAR(56) DEFAULT NULL,  
      OpSys              VARCHAR(11) DEFAULT NULL,  
@@ -149,7 +149,7 @@ engine=innodb
 DEFAULT charset=latin1; 
 
 
-LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/developer_survey_cl_si2.csv' 
+LOAD DATA LOCAL INFILE './Projects/maria_db/dbs/developer_survey/for_maria/developer_survey_cl_si2.csv' 
  INTO table master_maria_db.developer_survey_cl_si2 
  FIELDS TERMINATED BY ',' 
  LINES TERMINATED BY '\n' 

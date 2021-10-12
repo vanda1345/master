@@ -1,0 +1,34 @@
+{
+   "api": {
+       "http": {
+           "host": "127.0.0.1",
+           "port": "47334"
+       },
+       "mysql": {
+           "host": "127.0.0.1",
+           "password": "",
+           "port": "47335",
+           "user": "root"
+       }
+   },
+   "config_version": "1.4",
+   "debug": true,
+   "integrations": {
+       "default_postgres": {
+           "database": "postgres",
+           "publish": true,
+           "host": "localhost",
+           "password": "password",
+           "port": 5432,
+           "type": "postgres",
+           "user": "postgres"
+       }
+   },
+   "log": {
+       "level": {
+           "console": "DEBUG",
+           "file": "INFO"
+       }
+   },
+   "storage_dir": "/storage"
+}

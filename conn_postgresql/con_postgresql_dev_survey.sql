@@ -65,7 +65,7 @@ DELIMITER ','
 CSV HEADER;
 
 create table public.developer_survey_cl_si(
-	 MainBranch        VARCHAR(77), 
+	 MainBranch         VARCHAR(77), 
      Hobbyist           VARCHAR(3), 
      Age                numeric,
      Age1stCode         numeric, 
@@ -100,7 +100,7 @@ DELIMITER ','
 CSV HEADER; 
 
 create table public.developer_survey_cl_si2(
-	 MainBranch        VARCHAR(77), 
+	 MainBranch         VARCHAR(77), 
      Hobbyist           VARCHAR(3), 
      Age                numeric,
      Age1stCode         numeric, 
