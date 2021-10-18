@@ -1,0 +1,31 @@
+Questions:
+
+1. What operating system are you using? answers[0]
+ - MS windows 0
+ - MacOS 1
+ - Debian Ubuntu 2
+ - Fedora red hat 3
+ - Other Linux system 4
+ Add here maybe solaris, advanced UNIX system ...
+2. Have you ever coded in python? answers[1]
+ - Yes 1
+ - No  0
+3. How much free space for installations do you have on your computer? answers[2]
+- I less than 1GB 0
+- I have between 1 and 10GB 1
+- More than 10GB 2
+- I don't know 3
+4. What kind of predictions do you need? answers[3]
+ - predictions of class labels 0 
+ - predictions of a continuous quantity 1
+5. What kind of data does your dataset contain? answers[4]
+- Mostly numerical 0
+- Combination of numerical and one word strings 1
+- Mostly one word records 2
+- Mostly longer strings 3
+6. How fast do you need to get predictions? answers[5]
+- As soon as possible 0
+- I have some time 1
+7. Are you willing to invest some time in manual data optimization? answers[6]
+ - Yes 1
+ - No 0

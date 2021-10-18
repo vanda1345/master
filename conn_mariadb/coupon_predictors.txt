@@ -1,0 +1,14 @@
+BAR:
+insert into mindsdb.predictors(name, predict, select_data_query) values ('coupons_bar_model', 'Y', 'select destination, passanger, weather, temperature, time_d, coupon, expiration, gender, age, maritalStatus, has_children, education, occupation, income, Bar, toCoupon_GEQ5min, toCoupon_GEQ15min, toCoupon_GEQ25min, direction_same, direction_opp, Y from master_maria_db.coupons where coupon = "Bar"');
+
+RESTAURANT:
+insert into mindsdb.predictors(name, predict, select_data_query) values ('coupons_restaurant_model', 'Y', 'select destination, passanger, weather, temperature, time_d, coupon, expiration, gender, age, maritalStatus, has_children, education, occupation, income, RestaurantLessThan20, Restaurant20To50, toCoupon_GEQ5min, toCoupon_GEQ15min, toCoupon_GEQ25min, direction_same, direction_opp, Y from master_maria_db.coupons where coupon in ("Restaurant(<20)", "Restaurant(20-50)")');
+
+COFFEEHOUSE:
+insert into mindsdb.predictors(name, predict, select_data_query) values ('coupons_coffeehouse_model', 'Y', 'select destination, passanger, weather, temperature, time_d, coupon, expiration, gender, age, maritalStatus, has_children, education, occupation, income, CoffeeHouse, toCoupon_GEQ5min, toCoupon_GEQ15min, toCoupon_GEQ25min, direction_same, direction_opp, Y from master_maria_db.coupons where coupon = "Coffee House"');
+
+CARRYAWAY:
+insert into mindsdb.predictors(name, predict, select_data_query) values ('coupons_carryaway_model', 'Y', 'select destination, passanger, weather, temperature, time_d, coupon, expiration, gender, age, maritalStatus, has_children, education, occupation, income, CarryAway, toCoupon_GEQ5min, toCoupon_GEQ15min, toCoupon_GEQ25min, direction_same, direction_opp, Y from master_maria_db.coupons where coupon = "Carry out & Take away"');
+
+
+ER_GET_ERRMSG: Got error 122 '(1149) Execution failed on sql 'select destination, passanger, weather, temperature, time, coupon, expiration, gender, age, maritalStatus, has_children, education, occupation, income, RestaurantLessTh' from CONNECT
